@@ -86,5 +86,11 @@
     font-size: 13px;
     line-height: 30px;
   }
+  .thumbs {
+    img {
+      margin: 10px;
+      box-shadow: 0 0 8px #999;
+    }
+  }
 }
 </style>

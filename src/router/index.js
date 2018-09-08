@@ -8,6 +8,10 @@ import NewsList from '@/components/news/NewsList'
 import NewsInfo from '@/components/news/NewsInfo'
 import PhotoList from '@/components/photos/PhotoList'
 import PhotoInfo from '@/components/photos/PhotoInfo'
+import GoodsList from '@/components/goods/GoodsList'
+import GoodsInfo from '@/components/goods/GoodsInfo'
+import GoodsDesc from '@/components/goods/GoodsDesc'
+import GoodsComment from '@/components/goods/GoodsComment'
 
 Vue.use(Router)
 
@@ -56,7 +60,27 @@ export default new Router({
       path: '/home/photoinfo/:id',
       name: 'PhotoInfo',
       component: PhotoInfo
-    }
+    },
+    {
+      path: '/home/goodslist',
+      name: 'GoodsList',
+      component: GoodsList
+    },
+    {
+      path: '/home/goodsinfo/:id',
+      name: 'goodsinfo',
+      component: GoodsInfo
+    },
+    {
+      path: '/home/goodsdesc/:id',
+      name: 'goodsdesc',
+      component: GoodsDesc
+    },
+    {
+      path: '/home/goodscomment/:id',
+      name: 'goodscomment',
+      component: GoodsComment
+    },
   ],
   linkActiveClass: 'mui-active'     // 覆盖默认路由高亮的类
 })
